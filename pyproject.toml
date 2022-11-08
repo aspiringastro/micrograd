@@ -1,0 +1,19 @@
+[project]
+name = "micrograd_aspiringastro"
+version = "0.0.1"
+authors = [
+  { name="Andrej Karpathy", email="andrej.karpathy@gmail.com" },
+  { name="Aspiring Astro", email="aspiring.astro@gmail.com" }
+]
+description = "NN backpropagation gradient descent learning package - inspired by karpathy - A tiny scalar-valued autograd engine with a small PyTorch-like neural network library on top."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/aspiringastro/micrograd"
+"Bug Tracker" = "https://github.com/aspiringastro/micrograd/issues"
