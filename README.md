@@ -18,4 +18,4 @@ Learning Backpropagation one step at a time (with inspiration from @karpathy)
     draw_dot(o)
 ```
 
-![single pass backward propagation ](https://github.com/aspiringastro/micrograd/weight-fwd-prop.png)
+![single pass backward propagation ](https://github.com/aspiringastro/micrograd/blob/main/weight-fwd-prop.png)
