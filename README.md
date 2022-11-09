@@ -19,3 +19,4 @@ Learning Backpropagation one step at a time (with inspiration from @karpathy)
 ```
 
 ![single pass backward propagation ](https://github.com/aspiringastro/micrograd/blob/main/weight-fwd-prop.png)
+
