@@ -106,7 +106,7 @@ class TestMicrogradEngine(unittest.TestCase):
         print(f'w1 = {w1} w1t = {w1t.data.item()} w1.grad = {w1.grad} w1t.grad = {w1t.grad.item()}')
         print(f'w2 = {w2} w2t = {w2t.data.item()} w2.grad = {w2.grad} w2t.grad = {w2t.grad.item()}')
 
-        assert math.isclose(x1t.grad.item(), x1.grad, rel_tol=1e-4)
-        assert math.isclose(x2t.grad.item(), x2.grad, rel_tol=1e-4)
-        assert math.isclose(w1t.grad.item(), w1.grad, rel_tol=1e-4)
-        assert math.isclose(w2t.grad.item(), w2.grad, rel_tol=1e-4)
+        assert math.isclose(x1t.grad.item(), x1.grad, rel_tol=1e-6)
+        assert math.isclose(x2t.grad.item(), x2.grad, rel_tol=1e-6)
+        assert math.isclose(w1t.grad.item(), w1.grad, rel_tol=1e-6)
+        assert math.isclose(w2t.grad.item(), w2.grad, rel_tol=1e-6)
