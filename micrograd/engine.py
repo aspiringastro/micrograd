@@ -4,6 +4,8 @@ class Value:
     """ stores a single scalar value and its gradient """
 
     def __init__(self, data, _children=(), _op='', label=''):
+        # self.data = data.data if isinstance(data, Value) else data
+        assert isinstance(data, Value) == False, "attempt to initialize Value with its own type " + str(data) 
         self.data = data
         self.grad = 0.0
         self._backward = lambda: None
@@ -68,6 +70,7 @@ class Value:
 
     def tanh(self):
         x = self.data
+        assert isinstance(x, Value) == False, "Value object stored as scalar data" + str(self) + str(x)
         t = ((math.exp(2*x)-1)/(math.exp(2*x)+1))
         ops_l = 'tanh'
         out = Value(t, (self,), ops_l, f'{ops_l} {self._label}' )
